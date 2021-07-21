@@ -1,5 +1,5 @@
-resource "aws_route53_zone" "easy_aws" {
-  name = "easyaws.in"
+resource "aws_route53_zone" "aws_app" {
+  name = "awsapp.in"
 
   tags = {
     Environment = "dev"
@@ -20,5 +20,5 @@ resource "aws_route53_record" "www" {
 }
 
 output "name_server"{
-  value=aws_route53_zone.easy_aws.name_servers
+  value=aws_route53_zone.aws_app.name_servers
 }
