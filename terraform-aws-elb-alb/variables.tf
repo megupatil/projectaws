@@ -1,13 +1,13 @@
 variable "region" {
-  type    = "string"
+  type    = string
   default = "us-east-1"
 }
 variable "ami_id" {
   type = "map"
   default = {
-    us-east-1    = "ami-035b3c7efe6d061d5"
-    us-east-2    = "ami-02ccb28830b645a41"
-    eu-central-1 = "ami-9787h5h6nsn75gd33"
+    us-east-1    = "ami-0dc2d3e4c0f9ebd18"
+    us-east-2    = "ami-0233c2d874b811deb"
+    eu-central-1 = "ami-00f22f6155d6d92c5"
   }
 }
 variable "instance_type" {
