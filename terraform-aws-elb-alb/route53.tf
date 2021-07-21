@@ -7,7 +7,7 @@ resource "aws_route53_zone" "aws_app" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = aws_route53_zone.easy_aws.zone_id
+  zone_id = aws_route53_zone.aws_app.zone_id
   name    = "www.easyaws.in"
   type    = "A"
 
